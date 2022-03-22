@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Convert very very simple VanillaJS</title>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="info-container">
+      <p>taux par défaut :</p>
+      <span id="default-rate"></span>
+    </div>
+
+    <div class="convert-container">
+      <h3>Entrez votre montant à changer</h3>
+      <input id="valueEuro" type="number" min="0" />
+
+      <div class="result-container">
+        <p id="result"></p>
+        <span id="currency"></span>
+      </div>
+    </div>
+
+    <div class="convert-container">
+      <h3>Personnalisez votre taux</h3>
+      <div class="new-rate">
+        <div class="newChangeContainer">
+          <label for="new-change">Changez de taux</label>
+          <input id="new-change" type="number" min="0" />
+        </div>
+        <button id="convert-btn">button</button>
+      </div>
+      <div class="result-container">
+        <p id="new-result"></p>
+        <span id="new-currency"></span>
+      </div>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
